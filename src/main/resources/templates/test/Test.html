@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no" name="format-detection">
+    <title>Test</title>
+    <link rel="Shortcut Icon" th:href="${staticServer}+'/static-aioweb/image/logo.ico'" type="image/x-icon" />
+</head>
+<body>
+
+测试成功！<span th:if="${name} != null ">[[${name}]]</span>
+
+</body>
+</html>

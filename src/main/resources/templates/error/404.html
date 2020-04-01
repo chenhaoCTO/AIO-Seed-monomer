@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no" name="format-detection">
+    <title>温馨提醒</title>
+    <link rel="Shortcut Icon" th:href="${staticServer}+'/static-aioweb/image/logo.ico'" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" th:href="${staticServer}+'/static-aioweb/css/style.css?'+${staticVersion}" />
+    <script th:src="${staticServer}+'/static-aioweb/js/jquery-1.7.2.min.js?'+${staticVersion}" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="shead">
+    <a href="javascript:window.history.go(-1);" class="exit"></a>
+    <a href="javascript:;" class="logo">温馨提醒</a>
+</div>
+<div class="tips">
+    <div class="tips-texts">
+        <img th:src="${staticServer}+'/static-aioweb/image/tips.png?'+${staticVersion}"/>
+        <p style="font-size:16px;margin:20px;line-height:30px;" th:text="${errorMsg!=null&&errorMsg!=''?errorMsg:'找不到资源'}"></p>
+    </div>
+    <a class="tips-tologin centerItems" href="javascript:location.reload();">再试一次</a>
+</div>
+</body>
+</html>
