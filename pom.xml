@@ -8,10 +8,10 @@
         <version>2.2.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.seed</groupId>
-    <artifactId>ninomer</artifactId>
+    <groupId>com.aio</groupId>
+    <artifactId>monomer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ninomer</name>
+    <name>monomer</name>
     <description>单体应用种子架构</description>
 
     <properties>
@@ -24,7 +24,7 @@
     </properties>
 
     <dependencies>
-        <!-- web依赖 -->
+        <!-- web依赖 start -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -40,8 +40,8 @@
             <artifactId>nekohtml</artifactId>
             <version>${nekohtml.version}</version>
         </dependency>
-
-        <!-- 数据库依赖 -->
+        <!-- web依赖 end -->
+        <!-- 数据库依赖 start -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -61,21 +61,24 @@
             <artifactId>pagehelper</artifactId>
             <version>${pagehelper.version}</version>
         </dependency>
+        <!-- 数据库依赖 end -->
 
-        <!-- http 请求 -->
+        <!-- http请求 start -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
         </dependency>
+        <!-- http请求 end -->
 
-        <!-- fastjson -->
+        <!-- fastjson start -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
+        <!-- fastjson end -->
 
-        <!-- junit依赖 -->
+        <!-- junit依赖 start -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -87,14 +90,16 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- junit依赖 end -->
 
-        <!-- devtools 热部署插件 -->
+        <!-- devtools热部署插件 start -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
             <scope>true</scope>
         </dependency>
+        <!-- devtools热部署插件 end -->
 
     </dependencies>
 
